@@ -4,15 +4,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/index.css">
         <title>Ательє "Подіум"</title>
     </head>
-    <body>
+    <body onLoad="updateClock(); setInterval('updateClock()', 1000 )">
         <header>
+            <span id="clock">&nbsp;</span>
             <nav>
                 <ul>
                     <li><a href="#about-us">Про нас</a></li>
                     <li><a href="#services">Послуги</a></li>
-                    <li><a href="#galery">Галерея</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
                     <li><a href="#contacts">Контакти</a></li>
                 </ul>
             </nav>
@@ -73,7 +75,7 @@
                 </section>
             </div>
             
-            <div id="galery">
+            <div id="gallery">
                 <h2>Галерея</h2>
                 <img src="img/dress1.jpg" alt="Рожева сукня та її ескіз">
                 <img src="img/dress2.jpg" alt="Молочна сукня з вирізною спідницею">
@@ -151,5 +153,11 @@
         <footer>
             <p>© 2019 Ательє-студія "Подіум"</p>
         </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+     
+        <script src="js/index.js"></script>
     </body>
 </html>
