@@ -4,28 +4,35 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link rel="stylesheet" href="css/index.css">
+        
         <title>Ательє "Подіум"</title>
     </head>
     <body onLoad="updateClock(); setInterval('updateClock()', 1000 )">
         <header>
-            <span id="clock">&nbsp;</span>
-            <nav>
-                <ul>
-                    <li><a href="#about-us">Про нас</a></li>
-                    <li><a href="#services">Послуги</a></li>
-                    <li><a href="#gallery">Галерея</a></li>
-                    <li><a href="#contacts">Контакти</a></li>
-                </ul>
-            </nav>
+            <div class="topnav" id="myTopnav">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a href="#about-us" class="active">Про нас</a>
+                <a href="#services">Послуги</a>
+                <a href="#gallery">Галерея</a>
+                <a href="#contacts">Контакти</a>
+                <span id="clock">&nbsp;</span>
+            </div>
         </header>
         <main>
-            <h1>Ательє "Подіум"</h1>
-            <p>пошиття одягу</p>
-            <img src="img/sewing.jpg" alt="Фото процесу пошиття">
+            <img class="main-img" src="img/sewing.jpg" alt="Фото процесу пошиття">
             
-            <div id="about-us">
-                <p>У нашому ательє професійні кравчині допоможуть створити одяг відповідно до Ваших уподобань. Стильний одяг на щодень, вишукані святкові вбрання, ділові костюми, яскраві вишиванки — шиємо якісно і з любов’ю до своєї справи!</p>
+            <h1 id="about-us">Ательє "Подіум"</h1>
+            <p>студія пошиття одягу</p>
+            
+            <div>
+                <p>Ательє "Подіум" надає послуги з індивидуального пошиву одягу. Ми щодня приймаємо і виконуємо замовлення будь-якої складності. Наші спеціалісти з радістю допоможуть реалізувати Ваші найсміливіші фантазії у сфері індивидуального пошиву одягу щоб підкреслити Вашу індивидуальність і створити неповторний образ. Стильний одяг на щодень, вишукані святкові вбрання, ділові костюми, яскраві вишиванки — шиємо якісно і з любов’ю до своєї справи!</p>
             </div>
             
             <div id="services">
@@ -154,10 +161,11 @@
             <p>© 2019 Ательє-студія "Подіум"</p>
         </footer>
         
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-     
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
         <script src="js/index.js"></script>
     </body>
 </html>
